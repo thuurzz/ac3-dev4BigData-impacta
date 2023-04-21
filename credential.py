@@ -11,7 +11,5 @@ load_dotenv()
 client_id = os.getenv("client_id")
 client_secret = os.getenv("client_secret")
 redirect_uri = os.getenv("redirect_uri")
-
-print({
-    client_id, client_secret, redirect_uri
-})
+tabela_musicas = os.getenv("tabela_musicas")
+tabela_produtos = os.getenv("tabela_produtos")

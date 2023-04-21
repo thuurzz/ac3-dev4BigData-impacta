@@ -1,12 +1,12 @@
 import boto3
 import random
 import datetime
-import json
+from credential import tabela_produtos
 
 # Cria conexão com AWS Dynamodb
 boto3.setup_default_session(profile_name="default")
 dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table('purchases_arthur_vinicius_santos_silva')
+table = dynamodb.Table(tabela_produtos)
 
 opcoes_pagamento = ["pix", "debito", "credito", "boleto"]
 
