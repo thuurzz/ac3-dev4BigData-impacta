@@ -1,6 +1,9 @@
 import os
 from dotenv import load_dotenv
 
+# Link para documentação de como criar app no Spotify para ter as credenciais
+# https://developer.spotify.com/documentation/web-api
+
 # carrega as variáveis do arquivo .env
 load_dotenv()
 
