@@ -157,5 +157,6 @@ purchases = [
     'forma_pagamento': 'pix'}
 '''
 for purchase in purchases:
+    purchases.pop(purchases.index(purchase))
     print(purchase)
     table.put_item(Item=purchase)
